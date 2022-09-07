@@ -1,4 +1,11 @@
 <?php
+/*
+ * @Author: Louis Yu louis.yu@flashwire.com
+ * @Date: 2022-09-02 22:10:54
+ * @LastEditTime: 2022-09-07 15:53:49
+ */
+
+require_once 'functions.php';
 
 /*
 |--------------------------------------------------------------------------
