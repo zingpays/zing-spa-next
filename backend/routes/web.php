@@ -2,7 +2,7 @@
 /*
  * @Author: Louis Yu louis.yu@flashwire.com
  * @Date: 2022-09-02 22:10:54
- * @LastEditTime: 2022-09-07 14:43:56
+ * @LastEditTime: 2022-09-07 15:26:38
  */
 
 use Illuminate\Support\Facades\Route;
@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::any('/', [HomeController::class, 'indexAction']);
+Route::any('/', [App\Http\Controllers\HomeController::class, 'indexAction']);
 
 Route::any('/{module}/{controller}/{action}', function ($module, $controller, $action) {
     $controllerArr = array_map('ucfirst', explode('-', $controller));

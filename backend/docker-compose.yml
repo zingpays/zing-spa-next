@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+
+  zing-spa-next-backend:
+    build: .
+    image: zing-spa-next-backend:v1.0
+    ports:
+      - 8030:80
+      - 20030:20000
+    volumes:
+      - .:/app
