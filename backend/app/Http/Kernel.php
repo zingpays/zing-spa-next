@@ -1,4 +1,9 @@
 <?php
+/*
+ * @Author: Louis Yu louis.yu@flashwire.com
+ * @Date: 2022-09-02 22:10:54
+ * @LastEditTime: 2022-09-08 09:47:52
+ */
 
 namespace App\Http;
 
@@ -34,7 +39,7 @@ class Kernel extends HttpKernel
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \App\Http\Middleware\VerifyCsrfToken::class,
+        //disable csrf    \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
